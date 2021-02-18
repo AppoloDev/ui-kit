@@ -1,0 +1,44 @@
+import './Button.scss';
+import {Template, config} from  './Button';
+import {Meta, Preview, Story} from '@storybook/addon-docs/blocks'
+
+<Meta
+  title="Atomic/Button/Sizes"
+  argTypes={config.argTypes}
+/>
+
+# Default
+<Preview>
+    <Story name="Default" args={{
+        color: 'primary',
+        label: 'Bouton',
+        size: 'default',
+        type: 'default'
+    }}>
+        {Template.bind({})}
+    </Story>
+</Preview>
+
+# Medium
+<Preview>
+    <Story name="Medium" args={{
+        color: 'primary',
+        label: 'Bouton',
+        size: 'medium',
+        type: 'default'
+    }}>
+        {Template.bind({})}
+    </Story>
+</Preview>
+
+# Block
+<Preview>
+    <Story name="Block" args={{
+        color: 'primary',
+        label: 'Bouton',
+        size: 'block',
+        type: 'default'
+    }}>
+        {Template.bind({})}
+    </Story>
+</Preview>

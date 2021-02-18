@@ -1,0 +1,57 @@
+import './Button.scss';
+import {Template, config} from  './Button';
+import {Meta, Preview, Story} from '@storybook/addon-docs/blocks'
+
+<Meta
+    title="Atomic/Button/Variants"
+    argTypes={config.argTypes}
+/>
+
+# Default
+<Preview>
+    <Story name="Default" args={{
+        color: 'primary',
+        label: 'Bouton',
+        size: 'default',
+        type: 'default'
+    }}>
+        {Template.bind({})}
+    </Story>
+</Preview>
+
+# Outline
+<Preview>
+    <Story name="Outline" args={{
+        color: 'primary',
+        label: 'Bouton',
+        size: 'default',
+        type: 'outline'
+    }}>
+        {Template.bind({})}
+    </Story>
+</Preview>
+
+# Ghost
+<Preview>
+    <Story name="Ghost" args={{
+        color: 'primary',
+        label: 'Bouton',
+        size: 'default',
+        type: 'ghost'
+    }}>
+        {Template.bind({})}
+    </Story>
+</Preview>
+
+# Disabled
+<Preview>
+    <Story name="Disabled" args={{
+        color: 'primary',
+        label: 'Bouton',
+        size: 'default',
+        type: 'ghost',
+        disabled: true,
+    }}>
+        {Template.bind({})}
+    </Story>
+</Preview>
