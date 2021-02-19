@@ -15,7 +15,7 @@ export default {
             name: 'Sizes'
         },
         type: {
-            name: 'Types'
+            name: 'Variants'
         },
         icon: {
             name: 'Icon'
@@ -39,22 +39,22 @@ Basic.args = {label: 'Label'};
 export const Color = () => (
     <>
         <div style={{display: "flex"}}>
-            <button className="btn btn-primary" style={{marginRight: 16}}>
+            <button class="btn btn-primary" style={{marginRight: 16}}>
                 Label
             </button>
-            <button className="btn btn-success" style={{marginRight: 16}}>
+            <button class="btn btn-success" style={{marginRight: 16}}>
                 Label
             </button>
-            <button className="btn btn-danger" style={{marginRight: 16}}>
+            <button class="btn btn-danger" style={{marginRight: 16}}>
                 Label
             </button>
-            <button className="btn btn-warning" style={{marginRight: 16}}>
+            <button class="btn btn-warning" style={{marginRight: 16}}>
                 Label
             </button>
-            <button className="btn btn-info" style={{marginRight: 16}}>
+            <button class="btn btn-info" style={{marginRight: 16}}>
                 Label
             </button>
-            <button className="btn btn-gris">
+            <button class="btn btn-gris">
                 Label
             </button>
         </div>
@@ -64,18 +64,18 @@ export const Color = () => (
 export const Size = () => (
     <>
         <div style={{display: "flex", marginBottom: 16}}>
-            <button className="btn btn-primary btn-small" style={{marginRight: 16}}>
+            <button class="btn btn-primary btn-small" style={{marginRight: 16}}>
                 Label
             </button>
-            <button className="btn btn-primary btn-medium" style={{marginRight: 16}}>
+            <button class="btn btn-primary btn-medium" style={{marginRight: 16}}>
                 Label
             </button>
-            <button className="btn btn-primary btn-large" style={{marginRight: 16}}>
+            <button class="btn btn-primary btn-large" style={{marginRight: 16}}>
                 Label
             </button>
         </div>
 
-        <button className="btn btn-primary btn-block">
+        <button class="btn btn-primary btn-block">
             Label
         </button>
     </>
@@ -84,19 +84,19 @@ export const Size = () => (
 export const Type = () => (
     <>
         <div style={{display: "flex"}}>
-            <button className="btn btn-primary btn-outline" style={{marginRight: 16}}>
+            <button class="btn btn-primary btn-outline" style={{marginRight: 16}}>
                 Label
             </button>
 
-            <button className="btn btn-primary btn-ghost" style={{marginRight: 16}}>
+            <button class="btn btn-primary btn-ghost" style={{marginRight: 16}}>
                 Label
             </button>
 
-            <button className="btn btn-primary btn-link" style={{marginRight: 16}}>
+            <button class="btn btn-primary btn-link" style={{marginRight: 16}}>
                 Label
             </button>
 
-            <button className="btn btn-primary" disabled style={{marginRight: 16}}>
+            <button class="btn btn-primary" disabled style={{marginRight: 16}}>
                 Label
             </button>
         </div>
@@ -106,9 +106,9 @@ export const Type = () => (
 export const Icon = () => (
     <>
         <div style={{display: "flex"}}>
-            <button className="btn btn-primary btn-icon-left" style={{marginRight: 16}}>
+            <button class="btn btn-primary btn-icon-left" style={{marginRight: 16}}>
                 <svg
-                    className="feather feather-plus"
+                    class="feather feather-plus"
                     fill="none"
                     height="24"
                     stroke="currentColor"
@@ -135,11 +135,11 @@ export const Icon = () => (
 
                 Label
             </button>
-            <button className="btn btn-primary btn-icon-right" style={{marginRight: 16}}>
+            <button class="btn btn-primary btn-icon-right" style={{marginRight: 16}}>
                 Label
 
                 <svg
-                    className="feather feather-plus"
+                    class="feather feather-plus"
                     fill="none"
                     height="24"
                     stroke="currentColor"
