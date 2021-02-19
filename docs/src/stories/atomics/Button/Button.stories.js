@@ -1,5 +1,15 @@
 import './Button.scss';
 import Button from './Button';
+import {
+    Title,
+    Source,
+    Description,
+    Primary,
+    ArgsTable,
+    Stories,
+    PRIMARY_STORY,
+} from '@storybook/addon-docs/blocks';
+import dedent from 'ts-dedent';
 
 export default {
     title: "Atomic/Button",
@@ -20,15 +30,31 @@ export default {
         icon: {
             name: 'Icon'
         },
+        iconPosition: {
+            name: 'Icon Position'
+        },
         disabled: {
             name: 'Disabled'
         }
     },
     parameters: {
         docs: {
-            description: {
-                component: 'some component _markdown_',
-            },
+            page: () => (
+                <>
+                    <Title />
+                    <Description>Documentation for button component</Description>
+                    <Description>You can import button with following</Description>
+                    <Source
+                        language='scss'
+                        code={dedent`
+                            @import('~uikit/atomics/button/button')
+                         `}
+                    />
+                    <Primary />
+                    <ArgsTable story={PRIMARY_STORY} />
+                    <Stories />
+                </>
+            ),
         },
     },
 };
@@ -36,7 +62,7 @@ export default {
 export const Basic = (args) => Button(args);
 Basic.args = {label: 'Label'};
 
-export const Color = () => (
+export const Colors = () => (
     <>
         <div style={{display: "flex"}}>
             <button class="btn btn-primary" style={{marginRight: 16}}>
@@ -61,7 +87,7 @@ export const Color = () => (
     </>
 );
 
-export const Size = () => (
+export const Sizes = () => (
     <>
         <div style={{display: "flex", marginBottom: 16}}>
             <button class="btn btn-primary btn-small" style={{marginRight: 16}}>
@@ -81,7 +107,7 @@ export const Size = () => (
     </>
 );
 
-export const Type = () => (
+export const Variants = () => (
     <>
         <div style={{display: "flex"}}>
             <button class="btn btn-primary btn-outline" style={{marginRight: 16}}>
@@ -103,7 +129,7 @@ export const Type = () => (
     </>
 );
 
-export const Icon = () => (
+export const Icons = () => (
     <>
         <div style={{display: "flex"}}>
             <button class="btn btn-primary btn-icon-left" style={{marginRight: 16}}>
