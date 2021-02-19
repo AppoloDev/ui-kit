@@ -1,0 +1,92 @@
+import './Button.scss';
+import {Template, config} from  './Button';
+import {Meta, Preview, Story, Title} from '@storybook/addon-docs/blocks'
+
+<Meta
+  title="Atomic/Button/Colors"
+  argTypes={config.argTypes}
+/>
+
+# Primary
+<Preview>
+    <Story name="Primary" args={{
+        color: 'primary',
+        label: 'Bouton',
+        size: 'default',
+        type: 'default',
+        iconPosition: 'default',
+        icon: 'svg',
+    }}>
+        {Template.bind({})}
+    </Story>
+</Preview>
+
+# Success
+<Preview>
+    <Story name="Success" args={{
+        color: 'success',
+        label: 'Bouton',
+        size: 'default',
+        type: 'default',
+        iconPosition: 'default',
+        icon: 'svg',
+    }}>
+        {Template.bind({})}
+    </Story>
+</Preview>
+
+# Danger
+<Preview>
+    <Story name="Danger" args={{
+        color: 'danger',
+        label: 'Bouton',
+        size: 'default',
+        type: 'default',
+        iconPosition: 'default',
+        icon: 'svg',
+    }}>
+        {Template.bind({})}
+    </Story>
+</Preview>
+
+# Warning
+<Preview>
+    <Story name="Warning" args={{
+        color: 'warning',
+        label: 'Bouton',
+        size: 'default',
+        type: 'default',
+        iconPosition: 'default',
+        icon: 'svg',
+    }}>
+        {Template.bind({})}
+    </Story>
+</Preview>
+
+# Info
+<Preview>
+    <Story name="Info" args={{
+        color: 'info',
+        label: 'Bouton',
+        size: 'default',
+        type: 'default',
+        iconPosition: 'default',
+        icon: 'svg',
+    }}>
+        {Template.bind({})}
+    </Story>
+</Preview>
+
+# Gris
+<Preview>
+    <Story name="Gris" args={{
+        color: 'gris',
+        label: 'Bouton',
+        size: 'default',
+        type: 'default',
+        iconPosition: 'default',
+        icon: 'svg',
+    }}>
+        {Template.bind({})}
+    </Story>
+</Preview>
