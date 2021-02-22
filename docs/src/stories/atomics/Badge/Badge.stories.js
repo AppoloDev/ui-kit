@@ -34,7 +34,7 @@ export default {
                 <>
                     <Title/>
                     <Description>Documentation for badge component</Description>
-                    <Description>You can import div with following</Description>
+                    <Description>You can import badge with following</Description>
                     <Source
                         language='scss'
                         code={dedent`
