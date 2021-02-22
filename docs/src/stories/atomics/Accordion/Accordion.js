@@ -2,6 +2,10 @@ import React from "react";
 import PropTypes from 'prop-types';
 import '../../../../../src/atomics/accordion/accordion';
 
+import { gsap } from 'gsap'
+import { CSSPlugin } from 'gsap/CSSPlugin'
+gsap.registerPlugin(CSSPlugin)
+
 function Accordion(args) {
     const type = typeof args.type !== 'undefined' && args.type !== 'default' ? ` ${args.type}` : '';
 
