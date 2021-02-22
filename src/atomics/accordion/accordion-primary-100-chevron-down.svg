@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <g id="Groupe_1425" data-name="Groupe 1425" transform="translate(757 -251) rotate(90)">
+    <rect id="Rectangle_113" data-name="Rectangle 113" width="32" height="32" rx="4" transform="translate(251 725)" fill="#1875f0"/>
+    <g id="Groupe_1427" data-name="Groupe 1427" transform="translate(-448 1840) rotate(-90)">
+      <rect id="Rectangle_29" data-name="Rectangle 29" width="24" height="24" transform="translate(1087 703)" fill="#1875f0" opacity="0"/>
+      <path id="chevron-down" d="M6,9l3,3,3-3" transform="translate(1089.5 704.5)" fill="none" stroke="#d0ecfe" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    </g>
+  </g>
+</svg>
