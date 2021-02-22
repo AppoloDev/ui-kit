@@ -1,12 +1,9 @@
 @import '../../atomics/interface-button/interface-button';
+
 @import '../../core/all';
 @import '../../utils/functions';
 
 @import '../../utils/helpers/elevation';
-
-:root {
-    --button-size: 0;
-}
 
 .dropdown {
     position: relative;
