@@ -42,10 +42,9 @@ export default {
             page: () => (
                 <>
                     <Title />
-                    <Description>Documentation for button component</Description>
                     <Description markdown={dedent`
                         ## Import
-                        You can import button with following  
+                        You can import button style with following  
                     `}/>
                     <Source
                         language='scss'
