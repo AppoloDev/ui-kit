@@ -1,0 +1,43 @@
+@import "../../core/color";
+@import "../../utils/functions";
+@import "../../utils/misc";
+
+$colorsAlert: primary, success, danger, warning, info, gris;
+
+// Base alert (as primary by default)
+// ==================
+
+.alert {
+    display: flex;
+    align-items: center;
+    padding: var(--alert-vertical-padding, 24px) var(--alert-horizontal-padding, 32px);
+    margin: var(--alert-vertical-margin, 8px) var(--alert-horizontal-margin, 0);
+
+    border-radius: var(--alert-border-radius, 4px);
+
+    font-weight: 400;
+    font-size: rem(14);
+    line-height: rem(20);
+
+    .feather, i {
+        flex: 1 0 auto;
+        margin-right: 16px;
+    }
+
+    // Colors
+    // ==================
+    @each $color in $colorsAlert {
+        &-#{$color} {
+            background-color: var(--color-#{$color}-100);
+            color: var(--color-#{$color}-700);
+        }
+    }
+
+    &-neutral {
+        --alert-background-color: var(--white);
+        --alert-color: var(--color-neutral-700);
+        border: 1px solid var(--color-neutral-500);
+    }
+}
+
+
