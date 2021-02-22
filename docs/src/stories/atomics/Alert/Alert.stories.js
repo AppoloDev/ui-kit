@@ -30,14 +30,32 @@ export default {
             page: () => (
                 <>
                     <Title/>
-                    <Description>Documentation for alert component</Description>
-                    <Description>You can import button with following</Description>
+                    <Description markdown={dedent`
+                        ## Import
+                        You can import alert style with following  
+                    `}/>
                     <Source
                         language='scss'
                         code={dedent`
                             @import('~uikit/atomics/alert/alert')
                          `}
                     />
+                    <Description markdown={dedent`
+                        ## Variables
+                        You can override the following CSS variables to change the style of the alerts
+                        
+                        | CSS Variable                        | Default value                  |
+                        | ----------------------------------- |:------------------------------:|
+                        | --alert-vertical-padding            | 24px                           |
+                        | --alert-horizontal-padding          | 32px                           |
+                        | --alert-vertical-margin             | 8px                            |
+                        | --alert-horizontal-margin           | 0px                            |
+                        | --alert-background-color            | var(--color-primary-100)       |
+                        | --alert-color                       | var(--color-primary-700)       |
+                        | --alert-border-radius               | 4px                            |
+                       
+                        ## Playground
+                    `}/>
                     <Primary/>
                     <ArgsTable story={PRIMARY_STORY}/>
                     <Stories/>
