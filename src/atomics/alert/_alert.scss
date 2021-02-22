@@ -13,6 +13,9 @@ $colorsAlert: primary, success, danger, warning, info, gris;
     padding: var(--alert-vertical-padding, 24px) var(--alert-horizontal-padding, 32px);
     margin: var(--alert-vertical-margin, 8px) var(--alert-horizontal-margin, 0);
 
+    background-color: var(--alert-background-color, var(--color-primary-100));
+    color: var(--alert-color, var(--color-primary-700));
+
     border-radius: var(--alert-border-radius, 4px);
 
     font-weight: 400;

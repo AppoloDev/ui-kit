@@ -24,20 +24,42 @@ export default {
             page: () => (
                 <>
                     <Title />
-                    <Description>Documentation for accordion component</Description>
-                    <Description>You can import button with following</Description>
+                    <Description markdown={dedent`
+                        ## Import
+                        You can import accordion style with following  
+                    `}/>
                     <Source
                         language='css'
                         code={dedent`
                             @import('~uikit/atomics/accordion/accordion')
                          `}
                     />
+                    <Description markdown={dedent`
+                        You can import accordion web component with following  
+                    `}/>
                     <Source
                         language='js'
                         code={dedent`
                             import '~uikit/atomics/accordion/accordion'
                          `}
                     />
+                    <Description markdown={dedent`
+                        ## Variables
+                        You can override the following CSS variables to change the style of the accordions
+                        
+                        | CSS Variable                                | Default value                  |
+                        | ------------------------------------------- |:------------------------------:|
+                        | --accordion-border-color                    | var(--color-neutral-500)       |
+                        | --accordion-header-background-color         | var(--white)                   |
+                        | --accordion-header-vertical-padding         | 16px                           |
+                        | --accordion-header-horizontal-padding       | 16px                           |
+                        | --accordion-panel-background-color          | var(--white)                   |
+                        | --accordion-panel-vertical-padding          | 16px                           |
+                        | --accordion-bordered-panel-background-color | var(--color-neutral-300)       |
+                        | --accordion-bordered-panel-vertical-padding | 24px                           | 
+                       
+                        ## Playground
+                    `}/>
                     <Primary />
                     <ArgsTable story={PRIMARY_STORY} />
                     <Stories />

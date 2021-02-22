@@ -1,0 +1,177 @@
+// Checkbox / Radio
+// ==================
+input[type='checkbox'], input[type='radio'] {
+    &.form-control {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        height: var(--checkbox-width, 18px);
+        outline: none;
+        display: inline-block;
+        vertical-align: top;
+        position: relative;
+
+        margin: 0;
+        padding: 0;
+
+        cursor: pointer;
+        border: 1px solid var(--checkbox-border-color-color, var(--checkbox-border-color, var(--color-neutral-600)));
+        background: var(--checkbox-background-color-color, var(--checkbox-background-color, var(--white)));
+        transition: background .3s, border-color .3s, box-shadow .2s;
+
+        &:after {
+            content: '';
+            display: block;
+            left: 0;
+            top: 0;
+            position: absolute;
+            transition: transform var(--duration-transition, .3s) var(--duration-transition-e, ease), opacity var(--duration-opacity, .2s);
+        }
+
+        &:checked {
+            --checkbox-background-color-color: var(--checkbox-active-color, var(--color-primary-500));
+            --checkbox-border-color-color: var(--checkbox-active-color, var(--color-primary-500));
+            --duration-opacity: .3s;
+            --duration-transition: .6s;
+            --duration-transition-e: cubic-bezier(.2, .85, .32, 1.2);
+        }
+
+        &:disabled {
+            --checkbox-background-color-color: var(--checkbox-disabled-color, var(--color-neutral-300));
+            cursor: not-allowed;
+            opacity: .9;
+
+            &:checked {
+                --checkbox-background-color-color: var(--checkbox-disabled-color-inner, var(--color-neutral-500));
+                --checkbox-border-color-color: var(--checkbox-border-color, var(--color-neutral-600));
+            }
+
+            & + label {
+                cursor: not-allowed;
+            }
+        }
+
+        &:hover {
+            --checkbox-active-color: var(--color-primary-600);
+            &:not(:checked) {
+                &:not(:disabled) {
+                    --checkbox-border-color-color: var(--checkbox-border-color-hover, var(--color-primary-500));
+                }
+            }
+        }
+
+        &:focus {
+            box-shadow: 0 0 0 0.375rem rgba(203,219,241,.30);
+        }
+
+        &:not(.switch) {
+            width: 21px;
+
+            &:after {
+                opacity: var(--opacity, 0);
+            }
+
+            &:checked {
+                --opacity: 1;
+            }
+        }
+
+        & + label {
+            font-size: rem(14);
+            font-weight: 400;
+            // display: inline-flex;
+            display: inline;
+            cursor: pointer;
+            margin-left: 8px;
+            color: var(--color-gris-500);
+            align-items: center;
+        }
+
+        &.is-invalid {
+            --checkbox-active-color: var(--color-danger-500);
+            --checkbox-border-color-hover: var(--color-danger-500);
+
+            &:hover {
+                --checkbox-active-color: var(--color-danger-600);
+            }
+        }
+    }
+}
+
+// Checkbox
+// ==================
+input[type='checkbox'] {
+    &.form-control {
+        &:not(.switch) {
+            border-radius: var(--checkbox-border-radius, 4px);
+            width: var(--checkbox-width, 18px) !important;
+            flex: 0 0 var(--checkbox-width, 18px);
+
+            &:after {
+                width: 5px;
+                height: 9px;
+                border: 2px solid var(--checkbox-active-color-inner, var(--white));
+                border-top: 0;
+                border-left: 0;
+                left: 6px;
+                top: 3px;
+                transform: rotate(var(--rotae, 20deg));
+            }
+
+            &:checked {
+                --rotae: 43deg;
+            }
+        }
+
+        &.switch {
+            width: 32px !important;
+            border-radius: 11px;
+
+            &:after {
+                left: 2px;
+                top: 2px;
+                border-radius: 50%;
+                width: 12px;
+                height: 12px;
+                background: var(--ab, var(--checkbox-border-color, var(--color-neutral-600)));
+                transform: translateX(var(--translateX, 0));
+            }
+
+            &:checked {
+                --ab: var(--checkbox-active-color-inner, var(--white));
+                --translateX: 14px;
+            }
+
+            &:disabled {
+                &:not(:checked) {
+                    &:after {
+                        opacity: .6;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Radio
+// ==================
+input[type='radio'] {
+    &.form-control {
+        width: var(--checkbox-width, 18px) !important;
+        border-radius: 50%;
+
+        &:after {
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background: var(--checkbox-active-color-inner, var(--white));
+            opacity: 0;
+            transform: scale(var(--scale, .7));
+        }
+
+        &:checked {
+            --scale: .5;
+        }
+    }
+}
+
+//@TODO: Faire input type checkbox et radio avec des images custom issu de feather
