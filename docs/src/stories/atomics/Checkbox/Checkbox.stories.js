@@ -34,14 +34,33 @@ export default {
             page: () => (
                 <>
                     <Title />
-                    <Description>Documentation for checkbox component</Description>
-                    <Description>You can import checkbox with following</Description>
+                    <Description markdown={dedent`
+                        ## Import
+                        You can import checkbox, radio and switch style with following  
+                    `}/>
                     <Source
                         language='css'
                         code={dedent`
                             @import('~uikit/atomics/checkbox/checkbox')
                          `}
                     />
+                    <Description markdown={dedent`
+                        ## Variables
+                        You can override the following CSS variables to change the style of the checkboxes, radios and switches
+                        
+                        | CSS Variable                        | Default value                  |
+                        | ----------------------------------- |:------------------------------:|
+                        | --checkbox-width                    | 18px                           |
+                        | --checkbox-border-color             | var(--color-neutral-600)       |
+                        | --checkbox-border-color-hover       | var(--color-primary-500)       |
+                        | --checkbox-background-color         | var(--white)                   |
+                        | --checkbox-active-color             | var(--color-primary-500)       |
+                        | --checkbox-active-color-inner       | var(--white)                   |
+                        | --checkbox-disabled-color           | var(--color-neutral-300)       |
+                        | --checkbox-disabled-color-inner     | var(--color-neutral-500)       |
+                       
+                        ## Playground
+                    `}/>
                     <Primary />
                     <ArgsTable story={PRIMARY_STORY} />
                     <Stories />
