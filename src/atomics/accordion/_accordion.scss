@@ -1,0 +1,118 @@
+.accordion {
+    .bordered & {
+        &--item {
+            .header {
+                border-left: 1px solid var(--accordion-border-color, var(--color-neutral-500));
+                border-right: 1px solid var(--accordion-border-color, var(--color-neutral-500));
+
+                &.expanded {
+                    border-bottom: 1px solid var(--accordion-border-color, var(--color-neutral-500));
+                }
+            }
+
+            .panel {
+                border-left: 1px solid var(--accordion-border-color, var(--color-neutral-500));
+                border-right: 1px solid var(--accordion-border-color, var(--color-neutral-500));
+
+                --accordion-panel-vertical-padding: var(--accordion-bordered-panel-vertical-padding, 24px);
+                --accordion-panel-background-color: var(--accordion-bordered-panel-background-color, var(--color-neutral-300));
+            }
+
+            &:first-child {
+                .header {
+                    border-top: 1px solid var(--accordion-border-color, var(--color-neutral-500));
+                }
+            }
+
+            &:last-child {
+                .header {
+                    &.expanded {
+                        border-bottom: 1px solid var(--accordion-border-color, var(--color-neutral-500));
+                    }
+                }
+            }
+        }
+    }
+
+    &--item {
+        .header {
+            position: relative;
+
+            cursor: pointer;
+
+            border-top: 1px solid var(--accordion-border-color, var(--color-neutral-500));
+
+            background-color: var(--accordion-header-background-color, var(--white));
+            padding: var(--accordion-header-vertical-padding, 16px) var(--accordion-header-horizontal-padding, 16px);
+
+            font-weight: 500;
+            font-size: rem(14);
+            line-height: rem(16);
+            color: var(--color-gris-500);
+
+            &:hover {
+                &:after {
+                    background-image: url('./accordion-neutral-600-chevron-right--hover.svg');
+                }
+            }
+
+            &:after {
+                content: '';
+                width: 32px;
+                height: 32px;
+
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                right: var(--accordion-header-horizontal-padding, 16px);
+
+                transition: background-image .3s ease;
+
+                background-image: url('./accordion-neutral-600-chevron-right.svg');
+                background-repeat: no-repeat;
+                background-position: 50%;
+            }
+
+            &.expanded {
+                &:after {
+                    background-color: var(--color-primary-500);
+                    background-image: url('./accordion-primary-100-chevron-down.svg');
+                    border-radius: space(.5);
+                }
+            }
+        }
+
+        .panel {
+            //display: none;
+            background-color: var(--accordion-panel-background-color, var(--white));
+            font-weight: 400;
+            font-size: rem(14);
+            line-height: rem(20);
+            color: var(--color-gris-400);
+
+            height: 0;
+            overflow: hidden;
+
+            > p, > div {
+                padding: var(--accordion-panel-horizontal-padding, 16px);
+                margin: 0;
+            }
+        }
+
+        &:first-child {
+            .header {
+                border-top: none;
+            }
+        }
+
+        &:last-child {
+            .header {
+                border-bottom: none;
+            }
+
+            .panel {
+                border-bottom: 1px solid var(--accordion-border-color, var(--color-neutral-500));
+            }
+        }
+    }
+}
