@@ -4,18 +4,34 @@ import PropTypes from 'prop-types';
 function Badge(args) {
     const color = typeof args.color !== 'undefined' ? ` badge-${args.color}` : ' badge-primary';
     const size = typeof args.size !== 'undefined' && args.type !== 'default' ? ` badge-${args.size}` : '';
-    const type = typeof args.type !== 'undefined' && args.type !== 'default' ? ` badge-${args.type}` : '';
+    const lighter = typeof args.lighter !== 'undefined' && args.lighter ? ' badge-lighter' : '';
+
+    let type = '';
+    let label;
+
+    console.log(args);
+
+    if (args.rounded) {
+        type = ' badge-rounded';
+        label = 12;
+    } else {
+        label = args.label;
+    }
 
     return (
-        <div class={`badge${color}${size}${type}`}>{args.label}</div>
+        <div class={`badge${color}${size}${type}${lighter}`}>{label}</div>
     )
 }
 
 Badge.propTypes = {
     color: PropTypes.oneOf(['primary', 'success', 'danger', 'warning', 'info', 'gris']),
-    type: PropTypes.oneOf(['default', 'rounded'])
+    lighter: PropTypes.bool,
+    rounded: PropTypes.bool
 }
 
-Badge.defaultProps = {}
+Badge.defaultProps = {
+    lighter: false,
+    rounded: false
+}
 
 export default Badge;

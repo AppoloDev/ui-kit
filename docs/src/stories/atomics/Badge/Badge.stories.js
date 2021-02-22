@@ -21,8 +21,11 @@ export default {
         color: {
             name: 'Colors'
         },
-        type: {
-            name: 'Variants'
+        lighter: {
+            name: 'Lighter'
+        },
+        rounded: {
+            name: 'Rounded'
         }
     },
     parameters: {
@@ -35,7 +38,7 @@ export default {
                     <Source
                         language='scss'
                         code={dedent`
-                            @import('~uikit/atomics/button/button')
+                            @import('~uikit/atomics/badge/badge')
                          `}
                     />
                     <Primary/>
