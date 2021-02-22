@@ -1,0 +1,43 @@
+@import '../../core/all';
+@import "../../utils/functions";
+@import "../../utils/misc";
+
+$colorsBadge: primary, success, danger, warning, info, gris;
+
+.badge {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: default;
+
+    padding: var(--badge-vertical-padding, 8px) var(--badge-horizontal-padding, 8px);
+
+    background-color: var(--badge-background-color, var(--color-primary-500));
+
+    border-radius: var(--badge-border-radius, 4px);
+
+    font-family: inherit;
+    font-weight: 700;
+    font-size: rem(12);
+    line-height: rem(16);
+    color: var(--badge-color, var(--color-primary-100));
+
+    &-rounded {
+        --badge-border-radius: 50%;
+
+        min-width: 32px;
+    }
+
+    @each $color in $colorsBadge {
+        &-#{$color} {
+            --badge-background-color: var(--color-#{$color}-500);
+            --badge-color: var(--color-#{$color}-100);
+
+            &.badge-lighter {
+                --badge-background-color: var(--color-#{$color}-100);
+                --badge-color: var(--color-#{$color}-700);
+            }
+        }
+    }
+}
