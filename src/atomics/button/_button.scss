@@ -1,4 +1,5 @@
-@import "../../core/color";
+@import '../../core/all';
+
 @import "../../utils/functions";
 @import "../../utils/misc";
 
@@ -15,6 +16,7 @@ $colorsBtn: primary, success, danger, warning, info, gris;
     background-color: var(--button-background-color, var(--color-primary-500));
 
     font-size: var(--button-font-size, #{rem(16)});
+    font-family: inherit;
     font-weight: 700;
     color: var(--button-color, var(--color-primary-100));
     text-transform: uppercase;
