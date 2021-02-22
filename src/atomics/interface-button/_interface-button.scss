@@ -1,0 +1,111 @@
+@import '../../core/all';
+
+:root {
+    --ib-button-width: 48px;
+    --ib-button-background-color: var(--white);
+    --ib-button-color: var(--color-gris-700);
+
+    --ib-button-hover-background-color: var(--color-neutral-300);
+    --ib-button-hover-color: var(--color-gris-700);
+
+    --ib-button-active-background-color: var(--color-primary-500);
+    --ib-button-active-color: var(--color-primary-100);
+}
+
+// Button
+// ==================
+.ib-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: var(--ib-button-width);
+    height: var(--ib-button-width);
+
+    border-radius: var(--ib-button-radius, 4px);
+
+    background-color: var(--ib-button-background-color);
+    color: var(--ib-button-color);
+
+    cursor: pointer;
+    transition: background-color .3s ease, color .3s ease;
+
+    &:hover {
+        --ib-button-background-color: var(--ib-button-hover-background-color);
+        --ib-button-color: var(--ib-button-hover-color);
+    }
+
+    &:active {
+        --ib-button-background-color: var(--ib-button-active-background-color);
+        --ib-button-color: var(--ib-button-active-color);
+    }
+
+    &-dark {
+        opacity: .7;
+        --ib-button-background-color: var(--color-gris-900);
+        --ib-button-color: var(--color-neutral-500);
+
+        &:hover, &:active {
+            opacity: 1;
+            --ib-button-background-color: var(--color-gris-900);
+            --ib-button-color: var(--color-neutral-500);
+        }
+    }
+
+    &-secondary {
+        --ib-button-background-color: var(--color-neutral-300);
+        color: var(--color-neutral-600);
+
+        &:hover {
+            --ib-button-background-color: var(--ib-button-hover-background-color);
+            color: var(--ib-button-color);
+        }
+
+        &:active {
+            --ib-button-background-color: var(--ib-button-active-background-color);
+            color: var(--ib-button-active-color);
+        }
+    }
+}
+
+// Switch
+// ==================
+.ib-switch {
+    display: inline-flex;
+    transition: all .3s ease;
+
+    .ib-button {
+        --ib-button-background-color: var(--color-neutral-300);
+        border: 1px solid var(--color-neutral-300);
+        color: var(--color-neutral-600);
+        border-radius: 0;
+
+        &:hover {
+            --ib-button-background-color: var(--ib-button-hover-background-color);
+            color: var(--ib-button-color);
+            border: 1px solid var(--ib-button-hover-background-color);
+        }
+
+        &:active {
+            --ib-button-background-color: var(--ib-button-active-background-color);
+            --ib-button-color: var(--ib-button-active-color);
+            border: 1px solid var(--ib-button-active-background-color);
+        }
+
+        &.active {
+            --ib-button-background-color: var(--white);
+            border: 1px solid var(--color-neutral-500);
+            color: var(--ib-button-color);
+        }
+
+        &:first-child {
+            border-top-left-radius: var(--ib-button-radius);
+            border-bottom-left-radius: var(--ib-button-radius);
+        }
+
+        &:last-child {
+            border-top-right-radius: var(--ib-button-radius);
+            border-bottom-right-radius: var(--ib-button-radius);
+        }
+    }
+}

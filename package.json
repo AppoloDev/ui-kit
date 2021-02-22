@@ -19,6 +19,7 @@
   },
   "homepage": "https://appolodev.github.io/ui-kit/",
   "dependencies": {
+    "feather-icons": "^4.28.0",
     "gsap": "^3.6.0"
   }
 }
