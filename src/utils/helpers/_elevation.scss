@@ -1,0 +1,44 @@
+%elevation-100 {
+    box-shadow: 0 0 2px rgba(43, 63, 119, 0.1);
+}
+
+%elevation-200 {
+    box-shadow: 0 2px 4px rgba(43, 63, 119, 0.2);
+}
+
+%elevation-300 {
+    box-shadow: 0 4px 8px rgba(43, 63, 119, 0.2);
+}
+
+%elevation-400 {
+    box-shadow: 0 8px 12px rgba(43, 63, 119, 0.2);
+}
+
+%elevation-500 {
+    box-shadow: 0 16px 24px rgba(43, 63, 119, 0.3);
+}
+
+%elevation-bordered-100 {
+    border: 1px solid var(--color-neutral-500);
+    @extend %elevation-100;
+}
+
+%elevation-bordered-200 {
+    border: 1px solid var(--color-neutral-500);
+    @extend %elevation-200;
+}
+
+%elevation-bordered-300 {
+    border: 1px solid var(--color-neutral-500);
+    @extend %elevation-300;
+}
+
+%elevation-bordered-400 {
+    border: 1px solid var(--color-neutral-500);
+    @extend %elevation-400;
+}
+
+%elevation-bordered-500 {
+    border: 1px solid var(--color-neutral-500);
+    @extend %elevation-500;
+}
