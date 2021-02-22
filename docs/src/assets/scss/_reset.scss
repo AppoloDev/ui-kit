@@ -1,0 +1,25 @@
+input, button {
+    border: none;
+    appearance: none;
+    padding: 0;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+ul, ol {
+    list-style: none;
+    padding-inline-start: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color .3s ease;
+}
+
+*, ::before, ::after {
+    margin: 0;
+    box-sizing: border-box;
+}
