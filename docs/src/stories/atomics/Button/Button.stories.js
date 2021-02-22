@@ -43,13 +43,34 @@ export default {
                 <>
                     <Title />
                     <Description>Documentation for button component</Description>
-                    <Description>You can import button with following</Description>
+                    <Description markdown={dedent`
+                        ## Import
+                        You can import button with following  
+                    `}/>
                     <Source
                         language='scss'
                         code={dedent`
                             @import('~uikit/atomics/button/button')
                          `}
                     />
+                    <Description markdown={dedent`
+                        ## Variables
+                        You can override the following CSS variables to change the style of the buttons
+                        
+                        | CSS Variable                        | Default value                  |
+                        | ----------------------------------- |:------------------------------:|
+                        | --button-height                     | 48px                           |
+                        | --button-horizontal-padding         | 24px                           |
+                        | --button-font-size                  | #{rem(16)}                     |
+                        | --button-background-color           | var(--color-primary-500)       |
+                        | --button-color                      | var(--color-primary-100)       |
+                        | --button-border-radius              | 4px                            |
+                        | --button-border-width               | 1px                            |
+                        | --button-border-style               | solid                          |
+                        | --button-border-color               | var(--color-primary-500)       |
+                       
+                        ## Playground
+                    `}/>
                     <Primary />
                     <ArgsTable story={PRIMARY_STORY} />
                     <Stories />
