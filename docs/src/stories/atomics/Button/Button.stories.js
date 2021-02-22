@@ -49,7 +49,7 @@ export default {
                     <Source
                         language='scss'
                         code={dedent`
-                            @import('~uikit/atomics/button/button')
+                            @import('appolodev-ui-kit/src/atomics/button/_button')
                          `}
                     />
                     <Description markdown={dedent`

@@ -40,7 +40,7 @@ export default {
                     <Source
                         language='scss'
                         code={dedent`
-                            @import('~uikit/atomics/badge/badge')
+                            @import('appolodev-ui-kit/src/atomics/badge/_badge')
                          `}
                     />
                     <Description markdown={dedent`

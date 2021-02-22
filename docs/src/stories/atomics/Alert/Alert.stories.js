@@ -37,7 +37,7 @@ export default {
                     <Source
                         language='scss'
                         code={dedent`
-                            @import('~uikit/atomics/alert/alert')
+                            @import('appolodev-ui-kit/src/atomics/alert/_alert')
                          `}
                     />
                     <Description markdown={dedent`

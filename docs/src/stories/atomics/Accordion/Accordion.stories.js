@@ -29,9 +29,9 @@ export default {
                         You can import accordion style with following  
                     `}/>
                     <Source
-                        language='css'
+                        language='scss'
                         code={dedent`
-                            @import('~uikit/atomics/accordion/accordion')
+                            @import('appolodev-ui-kit/src/atomics/accordion/_accordion')
                          `}
                     />
                     <Description markdown={dedent`
@@ -40,7 +40,7 @@ export default {
                     <Source
                         language='js'
                         code={dedent`
-                            import '~uikit/atomics/accordion/accordion'
+                            import 'appolodev-ui-kit/src/atomics/accordion/accordion'
                          `}
                     />
                     <Description markdown={dedent`

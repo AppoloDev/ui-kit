@@ -39,9 +39,9 @@ export default {
                         You can import checkbox, radio and switch style with following  
                     `}/>
                     <Source
-                        language='css'
+                        language='scss'
                         code={dedent`
-                            @import('~uikit/atomics/checkbox/checkbox')
+                            @import('appolodev-ui-kit/src/atomics/checkbox/_checkbox')
                          `}
                     />
                     <Description markdown={dedent`

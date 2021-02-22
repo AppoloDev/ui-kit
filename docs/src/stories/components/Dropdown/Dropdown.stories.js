@@ -28,15 +28,15 @@ export default {
                     <Description>Documentation for dropdown component</Description>
                     <Description>You can import dropdown with following</Description>
                     <Source
-                        language='css'
+                        language='scss'
                         code={dedent`
-                            @import('~uikit/components/dropdown/dropdown')
+                            @import('appolodev-ui-kit/src/atomics/dropdown/_dropdown')
                          `}
                     />
                     <Source
                         language='js'
                         code={dedent`
-                            import '~uikit/components/dropdown/dropdown'
+                            import 'appolodev-ui-kit/src/components/dropdown/dropdown'
                          `}
                     />
                     <Primary/>
