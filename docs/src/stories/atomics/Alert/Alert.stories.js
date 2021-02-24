@@ -35,9 +35,9 @@ export default {
                         You can import alert style with following  
                     `}/>
                     <Source
-                        language='scss'
+                        language='css'
                         code={dedent`
-                            @import('appolodev-ui-kit/src/atomics/alert/_alert')
+                            @import 'appolodev-ui-kit/src/atomics/alert/_alert'
                          `}
                     />
                     <Description markdown={dedent`
@@ -50,8 +50,8 @@ export default {
                         | --alert-horizontal-padding          | 32px                           |
                         | --alert-vertical-margin             | 8px                            |
                         | --alert-horizontal-margin           | 0px                            |
-                        | --alert-background-color            | var(--color-primary-100)       |
-                        | --alert-color                       | var(--color-primary-700)       |
+                        | --alert-background-color            | --color-primary-100            |
+                        | --alert-color                       | --color-primary-700            |
                         | --alert-border-radius               | 4px                            |
                        
                         ## Playground

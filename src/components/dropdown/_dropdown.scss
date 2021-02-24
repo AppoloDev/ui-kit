@@ -16,7 +16,7 @@
         opacity: 0;
         visibility: hidden;
 
-        background-color: var(--dropdown-background-color, #FFF);
+        background-color: var(--dropdown-background-color, var(--white));
         border-radius: var(--dropdown-border-radius, 4px);
         border: 1px solid var(--dropdown-border-color, var(--color-neutral-500));
 
@@ -38,7 +38,7 @@
 
         ul {
             li {
-                background-color: var(--dropdown-item-background-color, #FFF);
+                background-color: var(--dropdown-item-background-color, var(--white));
 
                 a {
                     display: inline-flex;
@@ -67,13 +67,13 @@
             }
 
             &.others {
-                border-top: 1px solid var(--dropdown-border-color);
+                border-top: 1px solid var(--dropdown-border-color, var(--color-neutral-500));
                 --dropdown-item-background-color: var(--color-neutral-300);
 
                 li {
                     &:last-child {
-                        border-bottom-left-radius: var(--dropdown-border-radius);
-                        border-bottom-right-radius: var(--dropdown-border-radius);
+                        border-bottom-left-radius: var(--dropdown-border-radius, 4px);
+                        border-bottom-right-radius: var(--dropdown-border-radius, 4px);
                     }
                 }
             }
@@ -88,8 +88,8 @@
             > ul {
                 li {
                     &:first-child {
-                        border-top-left-radius: var(--dropdown-border-radius);
-                        border-top-right-radius: var(--dropdown-border-radius);
+                        border-top-left-radius: var(--dropdown-border-radius, 4px);
+                        border-top-right-radius: var(--dropdown-border-radius, 4px);
                     }
                 }
             }

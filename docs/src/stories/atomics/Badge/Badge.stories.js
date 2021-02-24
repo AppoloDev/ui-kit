@@ -38,9 +38,9 @@ export default {
                         You can import badge style with following  
                     `}/>
                     <Source
-                        language='scss'
+                        language='css'
                         code={dedent`
-                            @import('appolodev-ui-kit/src/atomics/badge/_badge')
+                            @import 'appolodev-ui-kit/src/atomics/badge/_badge'
                          `}
                     />
                     <Description markdown={dedent`
@@ -51,8 +51,8 @@ export default {
                         | ----------------------------------- |:------------------------------:|
                         | --badge-vertical-padding            | 8px                            |
                         | --badge-horizontal-padding          | 8px                            |
-                        | --badge-background-color            | var(--color-primary-500)       |
-                        | --badge-color                       | var(--color-primary-100)       |
+                        | --badge-background-color            | --color-primary-500            |
+                        | --badge-color                       | --color-primary-100            |
                         | --badge-border-radius               | 4px                            |
                        
                         ## Playground

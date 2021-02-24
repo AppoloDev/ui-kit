@@ -47,9 +47,9 @@ export default {
                         You can import button style with following  
                     `}/>
                     <Source
-                        language='scss'
+                        language='css'
                         code={dedent`
-                            @import('appolodev-ui-kit/src/atomics/button/_button')
+                            @import 'appolodev-ui-kit/src/atomics/button/_button'
                          `}
                     />
                     <Description markdown={dedent`
@@ -61,12 +61,12 @@ export default {
                         | --button-height                     | 48px                           |
                         | --button-horizontal-padding         | 24px                           |
                         | --button-font-size                  | #{rem(16)}                     |
-                        | --button-background-color           | var(--color-primary-500)       |
-                        | --button-color                      | var(--color-primary-100)       |
+                        | --button-background-color           | --color-primary-500            |
+                        | --button-color                      | --color-primary-100            |
                         | --button-border-radius              | 4px                            |
                         | --button-border-width               | 1px                            |
                         | --button-border-style               | solid                          |
-                        | --button-border-color               | var(--color-primary-500)       |
+                        | --button-border-color               | --color-primary-500            |
                        
                         ## Playground
                     `}/>

@@ -29,9 +29,9 @@ export default {
                         You can import accordion style with following  
                     `}/>
                     <Source
-                        language='scss'
+                        language='css'
                         code={dedent`
-                            @import('appolodev-ui-kit/src/atomics/accordion/_accordion')
+                            @import 'appolodev-ui-kit/src/atomics/accordion/_accordion';
                          `}
                     />
                     <Description markdown={dedent`
@@ -49,13 +49,13 @@ export default {
                         
                         | CSS Variable                                | Default value                  |
                         | ------------------------------------------- |:------------------------------:|
-                        | --accordion-border-color                    | var(--color-neutral-500)       |
-                        | --accordion-header-background-color         | var(--white)                   |
+                        | --accordion-border-color                    | --color-neutral-500            |
+                        | --accordion-header-background-color         | --white                        |
                         | --accordion-header-vertical-padding         | 16px                           |
                         | --accordion-header-horizontal-padding       | 16px                           |
-                        | --accordion-panel-background-color          | var(--white)                   |
+                        | --accordion-panel-background-color          | --white                        |
                         | --accordion-panel-vertical-padding          | 16px                           |
-                        | --accordion-bordered-panel-background-color | var(--color-neutral-300)       |
+                        | --accordion-bordered-panel-background-color | --color-neutral-300            |
                         | --accordion-bordered-panel-vertical-padding | 24px                           | 
                        
                         ## Playground

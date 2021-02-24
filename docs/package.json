@@ -12,16 +12,6 @@
   },
   "license": "MIT",
   "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "react-refresh": "^0.9.0",
-    "react-scripts": "4.0.1",
-    "web-vitals": "^0.2.4"
-  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -50,13 +40,23 @@
     ]
   },
   "devDependencies": {
-    "@storybook/addon-actions": "^6.1.18",
-    "@storybook/addon-essentials": "^6.1.18",
-    "@storybook/addon-links": "^6.1.18",
-    "@storybook/node-logger": "^6.1.18",
+    "@storybook/addon-actions": "^6.1.20",
+    "@storybook/addon-essentials": "^6.1.20",
+    "@storybook/addon-links": "^6.1.20",
+    "@storybook/node-logger": "^6.1.20",
     "@storybook/preset-create-react-app": "^3.1.6",
-    "@storybook/react": "^6.1.18",
+    "@storybook/react": "^6.1.20",
     "@storybook/storybook-deployer": "^2.8.7",
-    "node-sass": "^4.0.0"
+    "node-sass": "^5.0.0"
+  },
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-refresh": "^0.9.0",
+    "react-scripts": "4.0.3",
+    "web-vitals": "^0.2.4"
   }
 }
