@@ -1,0 +1,103 @@
+@import "../../utils/functions";
+@import "../../utils/mixins";
+@import "../../core/color";
+
+.pagination {
+    display: flex;
+
+    &.end {
+        justify-content: flex-end;
+    }
+
+    &--item {
+        height: var(--pagination-item-height, 40px);
+        width: var(--pagination-item-width, 40px);
+
+        font-size: rem(12);
+        line-height: rem(16);
+        font-weight: 700;
+        color: var(--pagination-item-color, var(--color-neutral-700));
+        background-color: var(--pagination-item-background-color, var(--white));
+
+        border: 1px solid var(--pagination-item-border-color, var(--color-neutral-500));
+        border-radius: var(--pagination-item-border-radius, 4px);
+
+        transition: color .3s ease, background-color .3s ease;
+
+        margin-right: 8px;
+
+        > a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            height: inherit;
+            color: inherit;
+        }
+
+        &:first-child, &:last-child {
+            width: auto;
+
+            > a {
+                padding: var(--pagination-item-vertical-padding, 0) var(--pagination-item-horizontal-padding, 16px);
+            }
+        }
+
+        &:first-child, &:nth-last-child(2) {
+            margin-right: 16px;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &.active {
+            --pagination-item-border-color: var(--color-primary-100);
+            --pagination-item-color: var(--color-primary-500);
+            --pagination-item-background-color: var(--color-primary-100);
+        }
+
+        &:hover {
+            --pagination-item-color: var(--color-neutral-700);
+            --pagination-item-background-color: var(--color-neutral-500);
+        }
+
+        &.disabled {
+            --pagination-item-color: var(--color-neutral-500);
+            --pagination-item-background-color: var(--white);
+
+            > a {
+                cursor: not-allowed;
+            }
+        }
+
+        @include down(550) {
+            &:first-child, &:nth-last-child(2) {
+                margin-right: 8px;
+            }
+
+            &:first-child, &:last-child {
+                > a {
+                    padding: var(--pagination-item-vertical-padding) 0;
+                }
+            }
+        }
+    }
+
+    &.slide & {
+        &--item {
+            --pagination-item-horizontal-padding: 24px;
+
+            &.active {
+                --pagination-item-border-color: var(--color-neutral-500);
+                --pagination-item-color: var(--color-primary-500);
+                --pagination-item-background-color: var(--white);
+            }
+
+            &:hover {
+                --pagination-item-color: var(--color-neutral-700);
+                --pagination-item-background-color: var(--color-neutral-500);
+            }
+        }
+    }
+}
