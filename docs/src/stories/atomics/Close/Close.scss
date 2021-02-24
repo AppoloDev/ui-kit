@@ -1,6 +1,8 @@
 @import '../../../../../src/atomics/close/close';
 
 #story--atomic-close--basic {
+    box-sizing: border-box;
+
     @import '../../../../../src/core/reset';
 }
 
