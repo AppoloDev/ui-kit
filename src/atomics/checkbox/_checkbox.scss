@@ -107,13 +107,13 @@ input[type='checkbox'] {
             flex: 0 0 var(--checkbox-width, 18px);
 
             &:after {
-                width: 5px;
-                height: 9px;
+                width: 3px;
+                height: 8px;
                 border: 2px solid var(--checkbox-active-color-inner, var(--white));
                 border-top: 0;
                 border-left: 0;
                 left: 6px;
-                top: 3px;
+                top: 2px;
                 transform: rotate(var(--rotae, 20deg));
             }
 
