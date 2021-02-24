@@ -39,9 +39,9 @@ export default {
                         You can import checkbox, radio and switch style with following  
                     `}/>
                     <Source
-                        language='scss'
+                        language='css'
                         code={dedent`
-                            @import('appolodev-ui-kit/src/atomics/checkbox/_checkbox')
+                            @import 'appolodev-ui-kit/src/atomics/checkbox/_checkbox'
                          `}
                     />
                     <Description markdown={dedent`
@@ -51,13 +51,13 @@ export default {
                         | CSS Variable                        | Default value                  |
                         | ----------------------------------- |:------------------------------:|
                         | --checkbox-width                    | 18px                           |
-                        | --checkbox-border-color             | var(--color-neutral-600)       |
-                        | --checkbox-border-color-hover       | var(--color-primary-500)       |
-                        | --checkbox-background-color         | var(--white)                   |
-                        | --checkbox-active-color             | var(--color-primary-500)       |
-                        | --checkbox-active-color-inner       | var(--white)                   |
-                        | --checkbox-disabled-color           | var(--color-neutral-300)       |
-                        | --checkbox-disabled-color-inner     | var(--color-neutral-500)       |
+                        | --checkbox-border-color             | --color-neutral-600            |
+                        | --checkbox-border-color-hover       | --color-primary-500            |
+                        | --checkbox-background-color         | --white                        |
+                        | --checkbox-active-color             | --color-primary-500            |
+                        | --checkbox-active-color-inner       | --white                        |
+                        | --checkbox-disabled-color           | --color-neutral-300            |
+                        | --checkbox-disabled-color-inner     | --color-neutral-500            |
                        
                         ## Playground
                     `}/>
