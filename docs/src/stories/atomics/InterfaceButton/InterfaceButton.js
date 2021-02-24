@@ -19,6 +19,4 @@ InterfaceButton.propTypes = {
     color: PropTypes.oneOf(['primary', 'secondary', 'dark']),
 }
 
-InterfaceButton.defaultProps = {}
-
 export default InterfaceButton;
