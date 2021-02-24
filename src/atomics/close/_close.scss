@@ -1,0 +1,33 @@
+.close {
+    cursor: pointer;
+
+    display: block;
+    width: var(--close-component-size, 42px);
+    height: var(--close-component-size, 42px);
+
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14.829' height='14.828'%3E%3Cg data-name='Icon Close' stroke-width='2' stroke='%237289b2' stroke-linecap='round' stroke-linejoin='round' fill='none'%3E%3Cpath data-name='Ligne 18' d='M13.414 1.414l-12 12'/%3E%3Cpath data-name='Ligne 19' d='M1.414 1.414l12 12'/%3E%3C/g%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    padding: 0;
+
+    transition: background-image .3s ease;
+
+    &:hover {
+        --close-component-border-color: var(--color-gris-700);
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14.829' height='14.828'%3E%3Cg data-name='Icon Close' stroke-width='2' stroke='%23233054' stroke-linecap='round' stroke-linejoin='round' fill='none'%3E%3Cpath data-name='Ligne 18' d='M13.414 1.414l-12 12'/%3E%3Cpath data-name='Ligne 19' d='M1.414 1.414l12 12'/%3E%3C/g%3E%3C/svg%3E");
+    }
+
+    &:before {
+        content: '';
+        display: block;
+        width: inherit;
+        height: inherit;
+
+        border-radius: 50%;
+        border: 1px solid var(--close-component-border-color, var(--color-neutral-500));
+
+        transition: border .3s ease;
+    }
+
+}

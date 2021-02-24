@@ -1,0 +1,14 @@
+@import '../../../../../src/atomics/close/close';
+
+#story--atomic-close--basic {
+    @import '../../../../../src/core/reset';
+}
+
+#anchor--atomic-close--basic {
+    .docs-story {
+        & > div:first-child {
+            height: 80px;
+        }
+    }
+}
+
