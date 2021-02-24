@@ -1,0 +1,13 @@
+@import '../../../../../src/atomics/loader/loader';
+
+#anchor--atomic-loader--basic {
+    .docs-story {
+        height: 420px;
+
+        > div {
+            &:first-child {
+                height: 420px;
+            }
+        }
+    }
+}
