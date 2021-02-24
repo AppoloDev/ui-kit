@@ -1,0 +1,18 @@
+@import '../../../../../src/components/pagination/pagination';
+
+#story--components-pagination--basic {
+    *,
+    ::before,
+    ::after {
+        box-sizing: inherit;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    a {
+        text-decoration: none;
+    }
+}
