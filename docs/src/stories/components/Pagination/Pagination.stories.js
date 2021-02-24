@@ -27,7 +27,7 @@ export default {
                     <Description>Documentation for pagination component</Description>
                     <Description markdown={dedent`
                         ## Import
-                        You can import dropdown style with following  
+                        You can import pagination style with following  
                     `}/>
                     <Source
                         language='css'
@@ -37,7 +37,7 @@ export default {
                     />
                     <Description markdown={dedent`
                         ## Variables
-                        You can override the following CSS variables to change the style of the accordions
+                        You can override the following CSS variables to change the style of the pagination
                         
                         | CSS Variable                                | Default value                  |
                         | ------------------------------------------- |:------------------------------:|

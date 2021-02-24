@@ -45,7 +45,7 @@ export default {
                     <Title/>
                     <Description markdown={dedent`
                         ## Import
-                        You can import alert style with following  
+                        You can import skeleton style with following  
                     `}/>
                     <Source
                         language='scss'
@@ -55,7 +55,7 @@ export default {
                     />
                     <Description markdown={dedent`
                         ## Variables
-                        You can override the following CSS variables to change the style of the alerts
+                        You can override the following CSS variables to change the style of the skeletons
                         
                         | CSS Variable                        | Default value                  |
                         | ----------------------------------- |:------------------------------:|
