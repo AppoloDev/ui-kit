@@ -1,27 +1,17 @@
 @import '../../../../../src/components/dropdown/dropdown';
 
-#story--components-dropdown--basic {
-    *,
-    ::before,
-    ::after {
-        box-sizing: inherit;
-    }
+#anchor--components-dropdown--basic {
+    .docs-story {
+        height: 420px;
 
-    ul {
-        list-style: none;
-        padding: 0;
-    }
-
-    a {
-        text-decoration: none;
-    }
-
-    button {
-        border: none;
-        padding: 0;
-
-        &:focus {
-            outline: none;
+        > div {
+            &:first-child {
+                height: 420px;
+            }
         }
+    }
+
+    #story--components-dropdown--basic {
+        @import '../../../../../src/core/reset';
     }
 }

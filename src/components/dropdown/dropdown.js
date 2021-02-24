@@ -8,6 +8,12 @@ class Dropdown extends HTMLDivElement {
             this.dropdownButtonSelector = this.querySelector('.dropdown__button');
             this.dropdownContentSelector = this.querySelector('.dropdown__content');
 
+            const hasHeader = this.querySelector('.header') !== null;
+
+            if (!hasHeader) {
+                this.dropdownContentSelector.classList.add('has-header')
+            }
+
             this.dropdownButtonSelector.addEventListener('click', () => {
                 this.toggleDropdown();
             });

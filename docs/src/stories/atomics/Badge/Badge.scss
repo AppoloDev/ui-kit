@@ -1,1 +1,7 @@
 @import '../../../../../src/atomics/badge/badge';
+
+#story--atomic-badge--basic {
+    box-sizing: border-box;
+
+    @import '../../../../../src/core/reset';
+}
