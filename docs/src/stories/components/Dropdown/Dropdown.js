@@ -12,8 +12,9 @@ function Dropdown(args) {
                 <i data-feather="more-horizontal"></i>
             </button>
 
-            <div class="dropdown__content" data-placement={placement}>
-                <div class="header">Main actions</div>
+            <div class={`dropdown__content ${args.showHeader ? 'has-header' : ''}`} data-placement={placement}>
+                {args.showHeader ? (<div className="header">Main actions</div>) : ''}
+
                 <ul class="main">
                     <li>
                         <a href="#"><i data-feather="edit-3"></i> Edit</a>
@@ -41,6 +42,12 @@ function Dropdown(args) {
 
 Dropdown.propTypes = {
     placement: PropTypes.oneOf(['left', 'right']),
+    showHeader: PropTypes.bool,
 }
+
+Dropdown.defaultProps = {
+    showHeader: true,
+}
+
 
 export default Dropdown;

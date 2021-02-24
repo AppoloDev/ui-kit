@@ -18,6 +18,9 @@ export default {
         placement: {
             name: 'Placement',
             description: 'Dropdown content placement'
+        },
+        showHeader: {
+            name: 'Header'
         }
     },
     parameters: {

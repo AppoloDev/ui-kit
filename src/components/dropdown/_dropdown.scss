@@ -84,7 +84,7 @@
             visibility: visible;
         }
 
-        &:not(.header) {
+        &:not(.has-header) {
             > ul {
                 li {
                     &:first-child {
