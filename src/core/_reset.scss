@@ -1,4 +1,5 @@
 html, body, p, ol, ul, li, dl, dt, dd, blockquote, button, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
     padding: 0;
 }
 
@@ -26,7 +27,6 @@ html {
 *,
 ::before,
 ::after {
-    margin: 0;
     box-sizing: inherit;
 }
 
