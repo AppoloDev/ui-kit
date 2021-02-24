@@ -1,5 +1,27 @@
 @import '../../../../../src/components/dropdown/dropdown';
 
-.dropdown {
-    @import '../../../../../src/core/reset';
+#story--components-dropdown--basic {
+    *,
+    ::before,
+    ::after {
+        box-sizing: inherit;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    button {
+        border: none;
+        padding: 0;
+
+        &:focus {
+            outline: none;
+        }
+    }
 }
