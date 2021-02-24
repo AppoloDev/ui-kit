@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "./static/css/main.45ffe284.chunk.css",
+    "main.js": "./main.475cc981c88d7c9a8576.bundle.js",
+    "main.css.map": "./static/css/main.45ffe284.chunk.css.map",
+    "main.js.map": "./main.475cc981c88d7c9a8576.bundle.js.map",
+    "runtime~main.js": "./runtime~main.475cc981c88d7c9a8576.bundle.js",
+    "runtime~main.js.map": "./runtime~main.475cc981c88d7c9a8576.bundle.js.map",
+    "vendors~main.js": "./vendors~main.475cc981c88d7c9a8576.bundle.js",
+    "vendors~main.js.map": "./vendors~main.475cc981c88d7c9a8576.bundle.js.map",
+    "iframe.html": "./iframe.html",
+    "static/media/Accordion.scss": "./static/media/accordion-primary-100-chevron-down.d268aa40.svg",
+    "vendors~main.475cc981c88d7c9a8576.bundle.js.LICENSE.txt": "./vendors~main.475cc981c88d7c9a8576.bundle.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "runtime~main.475cc981c88d7c9a8576.bundle.js",
+    "vendors~main.475cc981c88d7c9a8576.bundle.js",
+    "static/css/main.45ffe284.chunk.css",
+    "main.475cc981c88d7c9a8576.bundle.js"
+  ]
+}
