@@ -41,7 +41,7 @@ export default {
                     <Source
                         language='css'
                         code={dedent`
-                            @import 'appolodev-ui-kit/src/atomics/checkbox/_checkbox'
+                            @import 'appolodev-ui-kit/src/atomics/form-checkbox/_checkbox'
                          `}
                     />
                     <Description markdown={dedent`
